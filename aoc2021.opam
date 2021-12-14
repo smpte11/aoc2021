@@ -3,7 +3,8 @@ opam-version: "2.0"
 maintainer: ["Felix Brousseau-Tremblay"]
 authors: ["Felix Brousseau-Tremblay"]
 depends: [
-  "ocaml" {>= "4.13.1"}
+  "ocaml" {>= "4.12.1"}
+  "reason" {>= "3.7.0"}
   "base" {>= "0.14.2"}
   "core" {>= "0.14.1"}
   "dune" {>= "2.9" & build}
@@ -11,6 +12,7 @@ depends: [
   "merlin" {dev}
   "ocamlformat" {dev}
   "ocp-indent" {dev}
+  "ocaml-lsp-server" {dev}
   "utop" {dev}
   "odoc" {with-doc}
 ]
