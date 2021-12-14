@@ -3,12 +3,15 @@ opam-version: "2.0"
 maintainer: ["Felix Brousseau-Tremblay"]
 authors: ["Felix Brousseau-Tremblay"]
 depends: [
-  "dune" {>= "2.9"}
-  "merlin"
-  "ocamlformat"
-  "ocp-indent"
-  "utop"
   "ocaml" {>= "4.13.1"}
+  "base" {>= "0.14.2"}
+  "core" {>= "0.14.1"}
+  "dune" {>= "2.9" & build}
+  "ppx_inline_test" {test}
+  "merlin" {dev}
+  "ocamlformat" {dev}
+  "ocp-indent" {dev}
+  "utop" {dev}
   "odoc" {with-doc}
 ]
 build: [

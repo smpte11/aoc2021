@@ -1,6 +1,6 @@
 (lang dune 2.9)
 
-(name day1)
+(name aoc2021)
 
 (authors "Felix Brousseau-Tremblay")
 
@@ -9,13 +9,16 @@
 (generate_opam_files true)
 
 (package
-  (name day1)
+  (name aoc2021)
  (depends
-   dune
-   merlin
-   ocamlformat
-   ocp-indent
-   utop
    (ocaml (>= 4.13.1))
+   (base (>= 0.14.2))
+   (core (>= 0.14.1))
+   (dune :build)
+   (ppx_inline_test :test)
+   (merlin :dev)
+   (ocamlformat :dev)
+   ( ocp-indent :dev )
+   ( utop :dev)
  )
 )
