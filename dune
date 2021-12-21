@@ -1,3 +1,3 @@
 (executables
- (names day1 day2 profile)
+ (names day1 day2 day3 profile)
  (libraries base core))
