@@ -13,14 +13,11 @@
  (depends
   (ocaml
    (>= 4.12.1))
-  (reason
-   (>= 3.7.0))
   (base
    (>= 0.14.2))
   (core
    (>= 0.14.1))
   (dune :build)
-  (ppx_inline_test :test)
   (merlin :dev)
   (ocamlformat :dev)
   (ocp-indent :dev)
